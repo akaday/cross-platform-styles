@@ -1,0 +1,21 @@
+{
+  "name": "cross-platform-styles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass src/styles/main.scss dist/main.css",
+    "build:css": "postcss dist/main.css --use autoprefixer -d dist/",
+    "build": "npm run build:sass && npm run build:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.80.4"
+  }
+}
