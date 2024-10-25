@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+}
+
+[data-theme="dark"] {
+  --primary-color: #2980b9;
+  --secondary-color: #27ae60;
+}

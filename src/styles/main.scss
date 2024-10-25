@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.header {
+  @include flex-center;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.container {
+  @include grid-layout(3, 20px);
+  padding: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: var(--font-size-medium);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    @include grid-layout(1, 10px);
+  }
+
+  .button {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    @include grid-layout(2, 15px);
+  }
+
+  .button {
+    font-size: var(--font-size-medium);
+  }
+}
+
+@media (min-width: 901px) {
+  .container {
+    @include grid-layout(3, 20px);
+  }
+
+  .button {
+    font-size: var(--font-size-large);
+  }
+}

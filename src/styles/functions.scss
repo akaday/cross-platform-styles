@@ -1,0 +1,15 @@
+@function darken($color, $amount) {
+  @return mix(black, $color, $amount);
+}
+
+@function lighten($color, $amount) {
+  @return mix(white, $color, $amount);
+}
+
+@function contrast($color) {
+  @if (lightness($color) > 50%) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}

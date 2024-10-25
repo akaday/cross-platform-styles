@@ -38,6 +38,30 @@ src/styles/main.scss: Your main SCSS file where you define your styles.
 
 dist/: Directory where the compiled and processed CSS files will be output.
 
+## Theming with CSS Variables
+This project uses CSS variables to manage theming and make styles more adaptable. You can find the variables defined in `src/styles/variables.scss`.
+
+## Linting and Formatting
+To lint your styles and catch errors, run:
+
+```bash
+npm run stylelint
+```
+
+## Removing Unused Styles
+To remove unused styles and optimize your CSS, run:
+
+```bash
+npm run purgecss
+```
+
+## Testing with Jest and Enzyme
+To set up a testing environment for your styles, install Jest and Enzyme:
+
+```bash
+npm install jest enzyme enzyme-adapter-react-16 --save-dev
+```
+
 Contributing
 Fork the repository.
 
